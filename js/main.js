@@ -1,7 +1,6 @@
 function clickbutton(target){
 
     let result = document.getElementById("result")
-    console.log(target.innerHTML);
     let target_value = target.innerHTML;
     
     if (target_value == "AC"){
@@ -15,8 +14,47 @@ function clickbutton(target){
     }else{
         if(result.innerHTML == "0"){
             result.innerHTML = target_value
+        }else if(target_value == "+" && result.innerHTML.slice(-1) === "+"){
+            return;
+        }else if(target_value == "+" && result.innerHTML.slice(-1) === "-"){
+            return;
+        }else if(target_value == "+" && result.innerHTML.slice(-1) === "*"){
+            return;
+        }else if(target_value == "+" && result.innerHTML.slice(-1) === "/"){
+            return;
+
+        }else if(target_value == "-" && result.innerHTML.slice(-1) === "+"){
+            return;
+        }else if(target_value == "-" && result.innerHTML.slice(-1) === "-"){
+            return;
+        }else if(target_value == "-" && result.innerHTML.slice(-1) === "*"){
+            return;
+        }else if(target_value == "-" && result.innerHTML.slice(-1) === "/"){
+            return;
+
+        }else if(target_value == "*" && result.innerHTML.slice(-1) === "+"){
+            return;
+        }else if(target_value == "*" && result.innerHTML.slice(-1) === "-"){
+            return;
+        }else if(target_value == "*" && result.innerHTML.slice(-1) === "*"){
+            return;
+        }else if(target_value == "*" && result.innerHTML.slice(-1) === "/"){
+            return;
+
+        }else if(target_value == "/" && result.innerHTML.slice(-1) === "+"){
+            return;
+        }else if(target_value == "/" && result.innerHTML.slice(-1) === "-"){
+            return;
+        }else if(target_value == "/" && result.innerHTML.slice(-1) === "*"){
+            return;
+        }else if(target_value == "/" && result.innerHTML.slice(-1) === "/"){
+            return;
+
         }else{
             result.innerHTML = result.innerHTML + target_value
         }
-}
-}
+    }
+    
+};
+
+
