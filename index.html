@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>電卓</title>
+</head>
+<body>
+ <table class="dentaku">
+    <tr>
+        <td colspan="4" id="result" class="button">0</td>
+    </tr>
+    <tr>
+        <td colspan="1">
+            <button class="button" onclick="clickbutton(this)">7</button>
+        </td>
+        <td colspan="1">
+            <button class="button" onclick="clickbutton(this)">8</button>
+        </td>
+        <td colspan="1">
+            <button class="button" onclick="clickbutton(this)">9</button>
+        </td>
+        <td colspan="1">
+            <button class="button" onclick="clickbutton(this)">+</button>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="1">
+            <button class="button" onclick="clickbutton(this)">4</button>
+        </td>
+        <td colspan="1"> 
+            <button class="button" onclick="clickbutton(this)">5</button>
+        </td>
+        <td colspan="1">
+            <button class="button" onclick="clickbutton(this)">6</button>
+        </td>
+        <td colspan="1">
+            <button class="button" onclick="clickbutton(this)">-</button>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="1">
+            <button class="button" onclick="clickbutton(this)">1</button>
+        </td>
+        <td colspan="1"> 
+            <button class="button" onclick="clickbutton(this)">2</button>
+        </td>
+        <td colspan="1">
+            <button class="button" onclick="clickbutton(this)">3</button>
+        </td>
+        <td colspan="1">
+            <button class="button" onclick="clickbutton(this)">*</button>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="1">
+            <button class="button" onclick="clickbutton(this)">0</button>
+        </td>
+        <td colspan="1"> 
+            <button class="button" onclick="clickbutton(this)">00</button>
+        </td>
+        <td colspan="1">
+            <button class="button" onclick="clickbutton(this)">.</button>
+        </td>
+        <td colspan="1">
+            <button class="button" onclick="clickbutton(this)">/</button>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <button class="under-button" onclick="clickbutton(this)">AC</button>
+        </td>
+        <td colspan="2">
+            <button class="under-button" onclick="clickbutton(this)">=</button>
+        </td>
+    </tr>
+ </table>
+ <script src="js/main.js"></script>
+</body>
+</html>
+
+<style>
+    #result{
+        background-color: black;
+        color: white;
+        text-align: end;
+        padding-right: 5px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    button{
+        padding: 20px;
+        display: block;
+        text-align: center;
+        width: 60px;
+        
+    }
+
+    .under-button {
+        width: 130px;
+    }
+    
+</style>
