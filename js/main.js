@@ -15,7 +15,7 @@ function clickbutton(target){
         if(result.innerHTML.slice(-1) == "."){
             result.innerHTML == ""
         }else{
-            result.innerHTML == "="
+            result.innerHTML == "."
         }
     
     }else {
