@@ -11,7 +11,14 @@ function clickbutton(target){
 
         result.innerHTML = eval(result.innerHTML)
         
-    }else{
+    }else if(target_value == "."){
+        if(result.innerHTML.slice(-1) == "."){
+            result.innerHTML == ""
+        }else{
+            result.innerHTML == "="
+        }
+    
+    }else {
         if(result.innerHTML == "0"){
             result.innerHTML = target_value
         }else if(target_value == "+" && result.innerHTML.slice(-1) === "+"){
@@ -53,8 +60,11 @@ function clickbutton(target){
         }else{
             result.innerHTML = result.innerHTML + target_value
         }
-    }
-    
-};
+    }}
 
 
+   // function calc_period() { 
+       //if(target_value == "." && result.innerHTML.slice(-2) === "."){
+       /// return;
+       //}
+        //}
