@@ -11,13 +11,6 @@ function clickbutton(target){
 
         result.innerHTML = eval(result.innerHTML)
         
-    }else if(target_value == "."){
-        if(result.innerHTML.slice(-1) == "."){
-            result.innerHTML == ""
-        }else{
-            result.innerHTML == "."
-        }
-    
     }else {
         if(result.innerHTML == "0"){
             result.innerHTML = target_value
@@ -63,8 +56,5 @@ function clickbutton(target){
     }}
 
 
-   // function calc_period() { 
-       //if(target_value == "." && result.innerHTML.slice(-2) === "."){
-       /// return;
-       //}
-        //}
+   
+        
